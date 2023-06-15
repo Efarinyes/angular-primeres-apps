@@ -1,0 +1,23 @@
+<h4>Afegir Personatges</h4>
+<form class="row" (ngSubmit)="emitCharacter()">
+  <input
+    type="text"
+    [(ngModel)] = 'character.name'
+    name = 'name'
+    placeholder="Nom"
+    class="form-control mb-2">
+
+  <input
+    type="number"
+    [(ngModel)] = 'character.power'
+    name="power"
+    placeholder="Poder"
+    class="form-control mb-2">
+
+  <button type="submit" class="btn btn-outline-primary">
+    Afegir
+  </button>
+  <!-- <pre>
+    {{ character | json  }}
+  </pre> -->
+</form>
